@@ -1,0 +1,96 @@
+{
+  "enterprise": {
+    "private_mode": true,
+    "public_pages": false,
+    "subdomain_isolation": false,
+    "signup_enabled": false,
+    "github_hostname": "${public_hostname}",
+    "identicons_host": "dotcom",
+    "http_proxy": null,
+    "http_noproxy": null,
+    "auth_mode": "default",
+    "builtin_auth_fallback": false,
+    "expire_sessions": false,
+    "admin_password": null,
+    "configuration_id": 1557871990,
+    "configuration_run_count": 1,
+    "avatar": null,
+    "ldap": null,
+    "cas": null,
+    "saml": null,
+    "github_oauth": null,
+    "github_ssl": {
+      "enabled": true,
+      "tls_mode": [
+        "tlsv12"
+      ]
+    },
+    "smtp": {
+      "enabled": false,
+      "address": null,
+      "authentication": null,
+      "port": 0,
+      "domain": null,
+      "username": null,
+      "user_name": null,
+      "password": null,
+      "support_address": null,
+      "support_address_type": null,
+      "noreply_address": null,
+      "discard_to_noreply_address": false
+    },
+    "ntp": null,
+    "timezone": null,
+    "snmp": null,
+    "syslog": {
+      "enabled": false,
+      "server": null,
+      "protocol_name": "udp",
+      "tls_enabled": false,
+      "cert": null
+    },
+    "assets": null,
+    "pages": {
+      "enabled": true
+    },
+    "collectd": null,
+    "mapping": {
+      "enabled": false,
+      "tileserver": null,
+      "basemap": "github.map-xgq2svrz",
+      "token": null
+    },
+    "load_balancer": {
+      "http_forward": false,
+      "proxy_protocol": true
+    },
+    "abuse_rate_limiting": {
+      "enabled": false,
+      "requests_per_minute": 900,
+      "cpu_millis_per_minute": 90000,
+      "search_cpu_millis_per_minute": 7500
+    },
+    "api_rate_limiting": {
+      "enabled": false,
+      "unauthenticated_rate_limit": 60,
+      "default_rate_limit": 5000,
+      "search_unauthenticated_rate_limit": 10,
+      "search_default_rate_limit": 30,
+      "lfs_unauthenticated_rate_limit": 100,
+      "lfs_default_rate_limit": 3000,
+      "graphql_unauthenticated_rate_limit": 0,
+      "graphql_default_rate_limit": 5000
+    },
+    "governor": {
+      "quotas_enabled": false,
+      "limit_user": null,
+      "limit_network": null
+    },
+    "applications": {
+      "avatars_max_age": 300
+    }
+  },
+  "run_list": [
+    "recipe[enterprise-configure]"
+  ]
+}
