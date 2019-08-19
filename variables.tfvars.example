@@ -26,12 +26,16 @@ private_key_path = ""
 ec2_key_name = ""
 
 # Version of GHE AWS AMI to use
-ghe_version = ""
-
-# network_address_space
-network_address_space = ""
+ges_version = ""
 
 # aws_az
 aws_az = ""
 
+# License file path
+ges_license_path = ""
 
+# GES Primary Management Console Password
+ges_mgmt_password = ""
+
+# Route53 Hosted Zone Name
+route53_zone_name = ""
