@@ -9,24 +9,31 @@ What seems to be lacking are examples where best-practices of cloud infrastructu
 # Installation
 
 First rename the example variables file -
+
 `mv ./variables.tfvars.example ./variables.tfvars`
 
 Next fill in the variable values of the `variables.tfvars` file with information specific to your configuration. Also set the path of the variable.tfvars file to the `GES_VAR_PATH` environmential variable -
+
 `export GES_VAR_PATH=~/Documents/variables.tfvars`
 
 Afterwards you need to initialize your Terraform environment -
+
 `./build.sh -i`
 
 And finally you can run the following to see your Terraform Plan -
+
 `./build.sh -p`
 
 To apply said plan, execute the following -
+
 `./build.sh -a`
 
 When you're finished with your infrastructure you can destroy it -
+
 `./build.sh -d`
 
 But if you need to rebuild your infrastructure (destroy & create) you can issue just one command -
+
 `./build.sh -r`
 
 # Features
